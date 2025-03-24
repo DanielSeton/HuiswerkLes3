@@ -25,7 +25,9 @@ public class Main {
     }
 
     public static void meatBall(){
-        System.out.println("meatball");
+        MeatballRecipe ballrecept = new MeatballRecipe();
+        ballrecept.printIngredients();
+        ballrecept.printStappen();
     }
 
 }

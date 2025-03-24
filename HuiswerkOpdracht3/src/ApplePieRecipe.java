@@ -6,7 +6,7 @@ public class ApplePieRecipe {
     Ingredient ei = new Ingredient(1,"stuk(s)","ei");
     Ingredient vanille = new Ingredient(8,"gram","vanillesuiker");
     Ingredient zout = new Ingredient(1,"snuf","zout");
-    Ingredient appel = new Ingredient(1,"kilo","appels");
+    Ingredient appel = new Ingredient(1.5,"kilo","appels");
     Ingredient kristal = new Ingredient(75,"gram","kristal suiker");
     Ingredient kaneel = new Ingredient(3,"theelepels","kaneel");
     Ingredient paneermeel = new Ingredient(15,"gram","paneermeel");
@@ -27,16 +27,16 @@ public class ApplePieRecipe {
     }
 
     public void printIngredients(){
-        System.out.println(roomboter.getAmount() + " " + roomboter.getUnit() + " " + roomboter.getName());
-        System.out.println(suiker.getAmount() + " " + suiker.getUnit() + " " + suiker.getName());
-        System.out.println(bakmeel.getAmount() + " " + bakmeel.getUnit() + " " + bakmeel.getName());
-        System.out.println(ei.getAmount() + " " + ei.getUnit() + " " + ei.getName());
-        System.out.println(vanille.getAmount() + " " + vanille.getUnit() + " " + vanille.getName());
-        System.out.println(zout.getAmount() + " " + zout.getUnit() + " " + zout.getName());
-        System.out.println(appel.getAmount() + " " + appel.getUnit() + " " + appel.getName());
-        System.out.println(kristal.getAmount() + " " + kristal.getUnit() + " " + kristal.getName());
-        System.out.println(kaneel.getAmount() + " " + kaneel.getUnit() + " " + kaneel.getName());
-        System.out.println(paneermeel.getAmount() + " " + paneermeel.getUnit() + " " + paneermeel.getName());
+        roomboter.printIngredient();
+        suiker.printIngredient();
+        bakmeel.printIngredient();
+        ei.printIngredient();
+        vanille.printIngredient();
+        zout.printIngredient();
+        appel.printIngredient();
+        kristal.printIngredient();
+        kaneel.printIngredient();
+        paneermeel.printIngredient();
     }
 
 
